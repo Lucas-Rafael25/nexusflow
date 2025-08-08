@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Estilos da barra de navegação (para telas grandes) */
+nav#topnav {
+  background-color: white;
+  border: solid 1px rgba(182, 175, 175, 0.479);
+  width: 100%;
+  height: 60px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between; /* Distribui o espaço entre os grupos */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 5%; /* Adiciona um espaçamento nas laterais */
+  box-sizing: border-box; /* Garante que o padding não adicione largura extra */
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  margin: 0;
+  overflow-x: hidden; /* Evita a barra de rolagem horizontal */
+  background-color: aliceblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Agrupamento dos links para facilitar o alinhamento */
+.nav-links {
+  display: flex;
+  gap: 20px; /* Aumenta o espaço entre os links */
+}
+
+.nav-links a {
+  font: bold 10pt Arial;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0px 3px 0px 3px;
+  transition: border 0.3s;
+}
+
+.nav-links a:hover {
+  border: solid 1px black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+img#logo {
+  height: 40px;
+  max-width: 100%;
+}
+
+div#buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button#store {
+  background-color: rgba(0, 255, 0, 0.616);
+  border: solid 1px;
+  border-radius: 10px;
+  height: 40px;
+  min-height: fit-content;
+  font: bold 1em Arial;
+  transition: background-color 0.3s;
+  padding: 0 15px; /* Adiciona padding ao botão */
+}
+
+button#store:hover {
+  background-color: rgba(0, 206, 0, 0.616);
+  cursor: pointer;
+}
+div#service:hover{
+    border: solid 1px rgb(98, 60, 141);
+    cursor: pointer;
+}
+div#support:hover{
+    border: solid 1px rgb(98, 60, 141);
+    cursor: pointer;
+}
+div#why{
+  font: bold 10pt Arial;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0px 3px 0px 3px;
+  transition: border 0.3s;
+}
+div#service{
+  font: bold 10pt Arial;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0px 3px 0px 3px;
+  transition: border 0.3s;
+}
+div#support{
+    font: bold 10pt Arial;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0px 3px 0px 3px;
+    transition: border 0.3s;
+}
+div#about{
+    font: bold 10pt Arial;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0px 3px 0px 3px;
+  transition: border 0.3s;
+}
+div#demo{
+    font: bold 10pt Arial;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0px 3px 0px 3px;
+  transition: border 0.3s;
+}
+div#about:hover{
+    border: solid 1px rgb(98, 60, 141);
+    cursor: pointer;
+}
+div#demo:hover{
+    border: solid 1px rgb(98, 60, 141);
+    cursor: pointer;
+}
+div#why:hover{
+    border: solid 1px rgb(98, 60, 141);
+    cursor: pointer;
+}
+button#login{
+    background-color: rgb(0, 25, 253);
+    border: solid 1px;
+    border-radius: 10px;
+    height: 40px;
+    font: bold 1em Arial;
+    transition: background-color 0.3s;
+    padding: 0 15px; /* Adiciona padding ao botão */
+}
+button#login:hover{
+    background-color: rgba(55, 0, 255, 0.781);
+    cursor: pointer;
+}
+button#sing{
+    background-color: hwb(41 0% 0%);
+    border: solid 1px;
+    border-radius: 10px;
+    height: 40px;
+    font: bold 1em Arial;
+    transition: background-color 0.3s;
+    padding: 0 15px; /* Adiciona padding ao botão */
+}
+button#sing:hover{
+    background-color: rgba(255, 166, 0, 0.616);
+    cursor: pointer;    
+}
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none; /* Esconde os links em telas menores */
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+
 }
